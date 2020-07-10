@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">昨日头条</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard"></string>
+    <string name="title_notifications">我的</string>
+</resources>

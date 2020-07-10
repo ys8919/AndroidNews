@@ -1,0 +1,2 @@
+rootProject.name='AndroidNews'
+include ':app'
