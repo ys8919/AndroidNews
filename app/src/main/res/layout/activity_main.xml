@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.13999999" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TextUserName"
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.120000005">
+        app:layout_constraintVertical_bias="0.07999998">
 
 
         <EditText
@@ -57,6 +57,7 @@
             android:hint="密码"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <ScrollView
         android:id="@+id/scrollContent1"
         android:layout_width="match_parent"
@@ -69,17 +70,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextPassword"
-        app:layout_constraintVertical_bias="0.16000003">
-    <Button
-        android:id="@+id/button"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_btn_1"
-        android:text="登  录"
-        android:textColor="@color/colorButtonText"
-        android:textSize="25dp"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textViewNoUser"
+        app:layout_constraintVertical_bias="0.060000002">
+
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_1"
+            android:text="登  录"
+            android:textColor="@color/colorButtonText"
+            android:textSize="25dp" />
     </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewNoUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有账号？"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scrollContent1"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword"
+        app:layout_constraintVertical_bias="0.060000002" />
 </androidx.constraintlayout.widget.ConstraintLayout>

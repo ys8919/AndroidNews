@@ -6,4 +6,7 @@
     <color name="colorButton">#02dac5</color>
     <color name="colorButtonClick">#989696</color>
     <color name="colorButtonText">#ffffff</color>
+    <color name="colorNewsItem">#F0F0F0</color>
+    <color name="colorText">#000000</color>
+    <color name="colorCommentUser">#03DAC5</color>
 </resources>

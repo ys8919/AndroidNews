@@ -7,6 +7,8 @@ import java.util.Objects;
 
 public class NewsListEntity implements Serializable {
     private Integer newsId;
+    private Integer authorId;
+    private Integer classifyId;
     private String newsTitle;
     private String newsInfo;
     private String newsPhoto;
@@ -15,21 +17,12 @@ public class NewsListEntity implements Serializable {
     private String userName;
     private String classifyName;
 
-
-
-
-    public Integer getNewsId() {
-        return newsId;
-    }
-
-    public void setNewsId(Integer newsId) {
-        this.newsId = newsId;
-    }
-
     @Override
     public String toString() {
         return "NewsListEntity{" +
                 "newsId=" + newsId +
+                ", authorId=" + authorId +
+                ", classifyId=" + classifyId +
                 ", newsTitle='" + newsTitle + '\'' +
                 ", newsInfo='" + newsInfo + '\'' +
                 ", newsPhoto='" + newsPhoto + '\'' +
@@ -38,6 +31,30 @@ public class NewsListEntity implements Serializable {
                 ", userName='" + userName + '\'' +
                 ", classifyName='" + classifyName + '\'' +
                 '}';
+    }
+
+    public Integer getAuthorId() {
+        return authorId;
+    }
+
+    public void setAuthorId(Integer authorId) {
+        this.authorId = authorId;
+    }
+
+    public Integer getClassifyId() {
+        return classifyId;
+    }
+
+    public void setClassifyId(Integer classifyId) {
+        this.classifyId = classifyId;
+    }
+
+    public Integer getNewsId() {
+        return newsId;
+    }
+
+    public void setNewsId(Integer newsId) {
+        this.newsId = newsId;
     }
 
 

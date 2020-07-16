@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="103sp"
+    android:layout_width="match_parent"
+    android:tag=""
+    android:background="@drawable/bg_btn_news"
+    android:layout_marginBottom="5sp"
+    >
+
+    <TextView
+        android:id="@+id/comment_textView_user"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="2sp"
+        android:layout_marginEnd="50sp"
+        android:gravity="left"
+        android:tag=""
+        android:text=""
+        android:textColor="@color/colorCommentUser"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/comment_textView"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="50sp"
+        android:gravity="left"
+        android:tag=""
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment_textView_user"
+        app:layout_constraintVertical_bias="0.1" />
+    <TextView
+        android:id="@+id/comment_textView_time"
+        android:layout_width="match_parent"
+        android:layout_height="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="50sp"
+        android:gravity="left"
+        android:tag=""
+        android:text=""
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment_textView"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <View
+        android:id="@+id/news_view"
+        android:layout_width="match_parent"
+        android:layout_height="3sp"
+        android:tag=""
+        android:background="@drawable/dividingline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment_textView_time"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
